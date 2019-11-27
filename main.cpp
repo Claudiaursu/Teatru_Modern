@@ -2058,10 +2058,6 @@ int main()
                 if(e.returnAdult()==false && lista[j]->returnAdulti()==true)
                     ok5=false;
 
-                cout<<"----------------"<<endl;
-                cout<<ok1<<endl<<ok2<<endl<<ok3<<endl<<ok4<<endl<<ok5<<endl;
-                cout<<"-----------------"<<endl;
-
                 if(ok1== true && ok2==true && ok3==true && ok4==true && ok5==true && e.returnMaxLoc()==-1)
                 {
                     lista[j]->afisare();

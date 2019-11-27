@@ -1690,16 +1690,13 @@ bool respecta(Spectacol s, Dorinta d)
 
 bool respectaEx(Spectacol s, Exigenta e)
 {
-    bool ok= true;
+   bool ok= true;
     if(e.maxTimp!=-1 && e.maxTimp > s.durata)
         ok=false;
 
     const char *aux;
-    char *aux2;
-    strcpy(aux2,e.combtip.c_str());
-    aux2[0] = toupper(aux2[0]);
-    aux = (const char *)aux2;
-    if(strstr(typeid(s).name(),aux2)!=NULL  && s.gen==e.combgen ) //combinatia nedorita se intampla
+    aux=e.combtip.c_str();
+    if(strstr(typeid(s).name(),aux)!=NULL  && s.gen==e.combgen ) //combinatia nedorita se intampla
         ok=false;
     return ok;
 

@@ -2,10 +2,7 @@
 using namespace std;
 #include <typeinfo>
 #include <string.h>
-//de facut la final:
-///constr de copiere
-///calculez pauza cum trebuie, cu nr de pauze
-/// daca introducem ceva gresit(ziua lunii>31, cifra in loc d ecaracter
+
 class Spectacol;
 class Prezentare
 {
